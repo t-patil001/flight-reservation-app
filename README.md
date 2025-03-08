@@ -101,6 +101,10 @@ java -jar target/flight-reservation-app.jar
 ```sh
 apt install nodejs npm -y
 ```
+or
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt install -y nodejs
+
 
 ### Step 2: Navigate to the Frontend Directory
 ```sh
@@ -111,6 +115,9 @@ cd Frontend/
 ```sh
 export VITE_API_URL=http://<BACKEND-IP>:8080
 ```
+or vim /etc/profile 
+at end paste following
+export VITE_API_URL=http://<BACKEND-IP>:8080
 
 ### Step 4: Install Frontend Dependencies
 ```sh
